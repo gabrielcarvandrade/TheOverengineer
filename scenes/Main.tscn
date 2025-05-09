@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d10gbwegd8ohp"]
+
+[ext_resource type="PackedScene" uid="uid://beh7ljf7gmmxl" path="res://scenes/Player.tscn" id="1_rvslj"]
+[ext_resource type="PackedScene" uid="uid://crgevphtdbr45" path="res://scenes/Room.tscn" id="2_0bbpv"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Room" parent="." instance=ExtResource("2_0bbpv")]
+
+[node name="Room2" parent="." instance=ExtResource("2_0bbpv")]
+position = Vector2(576, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_rvslj")]
+position = Vector2(480, 368)
